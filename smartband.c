@@ -1,4 +1,4 @@
-#include "ws2811.h"
+#include "ws2811.pb"
 
 #include <stdio.h>
 #include <string.h>
@@ -153,7 +153,7 @@ int x, y;
 
 int anim_delay = 50;
 
-void read_png_file(png_anim_t *anim, char* file_name)
+void read_png_file(png_anim_t *anim, char* batu_band)
 {
         char header[8];    // 8 is the maximum size that can be checked
 
